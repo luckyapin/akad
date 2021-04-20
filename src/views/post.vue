@@ -79,22 +79,22 @@
 </template>
 
 <script>
-import WOW from "wowjs";
-import sidebar from "@/components/sidebar.vue";
-import bottomNav from "@/components/bottomNav.vue";
+import WOW from 'wowjs'
+import sidebar from '@/components/sidebar.vue'
+import bottomNav from '@/components/bottomNav.vue'
 export default {
-  name: "post",
+  name: 'post',
 
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
+      mobile: true
+    }).init()
   },
-  components: { sidebar, bottomNav },
-};
+  components: { sidebar, bottomNav }
+}
 </script>

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "204ba50c6c8f0936a16b",
+    "revision": "e1c6881e32cf04627e88",
     "url": "/akad/css/app.5b2e0058.css"
   },
   {
-    "revision": "7e0034bb0d1cdde28915",
-    "url": "/akad/css/chunk-6c33bfb2.3d3be771.css"
+    "revision": "be47f55e6ae7b8432cef",
+    "url": "/akad/css/chunk-95b10bc0.95b11272.css"
   },
   {
     "revision": "252a8569249ac00d7e43",
@@ -84,40 +84,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/akad/img/whyChooseUs.1c75af15.jpg"
   },
   {
-    "revision": "152dc732ffa63ea42151f4c4aeb03798",
+    "revision": "84c16b4e9420bc2c9bdd924db27e1647",
     "url": "/akad/index.html"
   },
   {
-    "revision": "204ba50c6c8f0936a16b",
-    "url": "/akad/js/app.57674107.js"
+    "revision": "e1c6881e32cf04627e88",
+    "url": "/akad/js/app.192d6330.js"
   },
   {
-    "revision": "d9be04dd243cdedfdc76",
-    "url": "/akad/js/chunk-0b2cd964.642c11d4.js"
+    "revision": "d661ffc81b24edccd78b",
+    "url": "/akad/js/chunk-0b2cd964.822c81c3.js"
   },
   {
-    "revision": "4b673d9cb6ede0d5c457",
-    "url": "/akad/js/chunk-18ca7248.1dfbff3d.js"
+    "revision": "084c2341ce708e0898d8",
+    "url": "/akad/js/chunk-18ca7248.0815d348.js"
   },
   {
     "revision": "f8076e9014349884d5df",
     "url": "/akad/js/chunk-2d0abf5f.573dd5b7.js"
   },
   {
-    "revision": "f2796361f337cb71e68e",
-    "url": "/akad/js/chunk-2d0bdf77.489e12d9.js"
+    "revision": "81c49b82dee1947acd31",
+    "url": "/akad/js/chunk-2d0bdf77.7d2c62f2.js"
   },
   {
-    "revision": "5863c583b855427140a0",
-    "url": "/akad/js/chunk-5e1602a4.6c11e433.js"
+    "revision": "b045f1c2fd1a9e29cc38",
+    "url": "/akad/js/chunk-5e1602a4.ee41930c.js"
   },
   {
-    "revision": "7e0034bb0d1cdde28915",
-    "url": "/akad/js/chunk-6c33bfb2.c076ed5f.js"
+    "revision": "be47f55e6ae7b8432cef",
+    "url": "/akad/js/chunk-95b10bc0.f846c50c.js"
   },
   {
-    "revision": "91b9dd6f61f0ddbc98a1",
-    "url": "/akad/js/chunk-b7cc3d00.cbe7c8eb.js"
+    "revision": "90fb746a653f23e6c6e0",
+    "url": "/akad/js/chunk-b7cc3d00.617f81f4.js"
   },
   {
     "revision": "252a8569249ac00d7e43",

@@ -64,83 +64,83 @@
   </div>
 </template>
 <script>
-import "@/assets/js/post.js";
+import '@/assets/js/post.js'
 export default {
-  data() {
+  data () {
     return {
       posts: [
         {
-          title: "MAGNA MOLLIS ULTRICIES 1",
-          date: "3th october 2015",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'MAGNA MOLLIS ULTRICIES 1',
+          date: '3th october 2015',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "MAGNA MOLLIS ULTRICIES 2",
-          date: "3th october 2015",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'MAGNA MOLLIS ULTRICIES 2',
+          date: '3th october 2015',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "MAGNA MOLLIS ULTRICIES 3",
-          date: "3th october 2015",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
-        },
+          title: 'MAGNA MOLLIS ULTRICIES 3',
+          date: '3th october 2015',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
+        }
       ],
       categories: [
         {
-          title: "Business",
-          count: "15",
+          title: 'Business',
+          count: '15'
         },
         {
-          title: "Photography",
-          count: "22",
+          title: 'Photography',
+          count: '22'
         },
         {
-          title: "Journal",
-          count: "27",
+          title: 'Journal',
+          count: '27'
         },
         {
-          title: "Web development",
-          count: "30",
-        },
+          title: 'Web development',
+          count: '30'
+        }
       ],
       tags: [
-        { title: "css" },
-        { title: "html" },
-        { title: "javascript" },
-        { title: "jquery" },
-        { title: "bootstrap" },
-        { title: "web development" },
-        { title: "ui & ux" },
+        { title: 'css' },
+        { title: 'html' },
+        { title: 'javascript' },
+        { title: 'jquery' },
+        { title: 'bootstrap' },
+        { title: 'web development' },
+        { title: 'ui & ux' }
       ],
       instagram: [
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
-        { src: "https://picsum.photos/800/500?random=" + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() },
+        { src: 'https://picsum.photos/800/500?random=' + Math.random() }
       ],
       archives: [
         {
-          title: "jan-feb 2015",
-          count: "15",
+          title: 'jan-feb 2015',
+          count: '15'
         },
         {
-          title: "feb-mar 2015",
-          count: "22",
+          title: 'feb-mar 2015',
+          count: '22'
         },
         {
-          title: "mar-apr 2015",
-          count: "27",
+          title: 'mar-apr 2015',
+          count: '27'
         },
         {
-          title: "apr-may 2015",
-          count: "30",
-        },
-      ],
-    };
-  },
-};
+          title: 'apr-may 2015',
+          count: '30'
+        }
+      ]
+    }
+  }
+}
 </script>

@@ -221,26 +221,25 @@
 
 <script>
 // @ is an alias to /src
-import "@/assets/js/homepage.js";
-import works from "@/components/works.vue";
-//import "@/assets/js/wow.min.js";
-import WOW from "wowjs";
+import '@/assets/js/homepage.js'
+import works from '@/components/works.vue'
+// import "@/assets/js/wow.min.js";
+import WOW from 'wowjs'
 export default {
-  name: "Home",
+  name: 'Home',
 
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
+      mobile: true
+    }).init()
   },
   components: {
-    works,
-  },
-};
+    works
+  }
+}
 </script>
-

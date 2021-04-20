@@ -1,31 +1,31 @@
 <script>
-import { LINE_PATH_CONFIG } from "@/constants/mapSettings";
+import { LINE_PATH_CONFIG } from '@/constants/mapSettings'
 
 export default {
   props: {
     google: {
       type: Object,
-      required: true,
+      required: true
     },
     map: {
       type: Object,
-      required: true,
+      required: true
     },
     path: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
 
-  mounted() {
-    const { Polyline } = google.maps;
+  mounted () {
+    const { Polyline } = google.maps
     new Polyline({
       path: this.path,
       map: this.map,
-      ...LINE_PATH_CONFIG,
-    });
+      ...LINE_PATH_CONFIG
+    })
   },
 
-  render() {},
-};
+  render () {}
+}
 </script>

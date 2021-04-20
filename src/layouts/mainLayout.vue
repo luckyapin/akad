@@ -94,22 +94,22 @@
   </div>
 </template>
 <script>
-import Socials from "@/components/socials.vue";
-import WOW from "wowjs";
+import Socials from '@/components/socials.vue'
+import WOW from 'wowjs'
 export default {
-  name: "main-layout",
+  name: 'main-layout',
   components: {
-    Socials,
+    Socials
   },
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
-  },
-};
+      mobile: true
+    }).init()
+  }
+}
 </script>

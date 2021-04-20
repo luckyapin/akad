@@ -73,51 +73,51 @@
   </div>
 </template>
 <script>
-import WOW from "wowjs";
-import socials from "../components/socials";
-import bottomNav from "@/components/bottomNav.vue";
+import WOW from 'wowjs'
+import socials from '../components/socials'
+import bottomNav from '@/components/bottomNav.vue'
 export default {
-  name: "post",
-  data() {
+  name: 'post',
+  data () {
     return {
       all: [
         {
-          title: "Brave Man",
-          category: "All",
-          class: "block1 ",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'All',
+          class: 'block1 ',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block1 ",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block1 ',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "webdesign",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'webdesign',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "logo",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
-        },
-      ],
-    };
+          title: 'Brave Man',
+          category: 'logo',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
+        }
+      ]
+    }
   },
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
+      mobile: true
+    }).init()
   },
-  components: { socials, bottomNav },
-};
+  components: { socials, bottomNav }
+}
 </script>

@@ -5,23 +5,22 @@
 </template>
 
 <script>
-import mainLayout from "@/layouts/mainLayout";
-//import homepageJS from "@/assets/js/homepage.js";
-//import "@/assets/js/wow.min.js";
+import mainLayout from '@/layouts/mainLayout'
+// import homepageJS from "@/assets/js/homepage.js";
+// import "@/assets/js/wow.min.js";
 
 export default {
   computed: {
-    layout() {
-      console.log(this.$route.meta);
-      return "mainLayout";
-    },
+    layout () {
+      console.log(this.$route.meta)
+      return 'mainLayout'
+    }
   },
   components: {
-    mainLayout,
-  },
-};
+    mainLayout
+  }
+}
 </script>
-
 
 <style >
 @import "../node_modules/owl.carousel/dist/assets/owl.theme.default.css";

@@ -65,8 +65,7 @@ const routes = [
     meta: {
       layout: 'mainLayout'
     }
-  },
-
+  }
 
 ]
 

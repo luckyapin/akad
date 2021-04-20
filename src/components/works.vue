@@ -72,135 +72,135 @@
 </template>
 
 <script>
-import WOW from "wowjs";
+import WOW from 'wowjs'
 export default {
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
+      mobile: true
+    }).init()
   },
-  data() {
+  data () {
     return {
       all: [
         {
-          title: "Brave Man",
-          category: "All",
-          class: "block2 ",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'All',
+          class: 'block2 ',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block1 ",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block1 ',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "webdesign",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'webdesign',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "logo",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'logo',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "graphics",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'graphics',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "logo",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'logo',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "graphics",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'graphics',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "advertising",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'advertising',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "Photography",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'Photography',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "advertising",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'advertising',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "fashion",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'fashion',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "advertising",
-          class: "block2",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
+          title: 'Brave Man',
+          category: 'advertising',
+          class: 'block2',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
         },
         {
-          title: "Brave Man",
-          category: "fashion",
-          class: "block1",
-          image: "https://picsum.photos/800/500?random=" + Math.random(),
-        },
+          title: 'Brave Man',
+          category: 'fashion',
+          class: 'block1',
+          image: 'https://picsum.photos/800/500?random=' + Math.random()
+        }
       ],
-      picked: "All",
-    };
+      picked: 'All'
+    }
   },
 
   computed: {
     pick: function (picked) {
-      var l = picked.picked;
+      var l = picked.picked
       return this.all.filter(function (all) {
-        return all.category == l || l == "All";
-      });
-    },
-  },
-};
+        return all.category == l || l == 'All'
+      })
+    }
+  }
+}
 </script>

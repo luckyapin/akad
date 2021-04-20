@@ -275,22 +275,22 @@
 
 <script>
 // @ is an alias to /src
-import "@/assets/js/about.js";
-import "@/assets/js/owl.js";
-//import "@/assets/js/wow.min.js";
-//import "@/assets/js/about.js";
-import WOW from "wowjs";
+import '@/assets/js/about.js'
+import '@/assets/js/owl.js'
+// import "@/assets/js/wow.min.js";
+// import "@/assets/js/about.js";
+import WOW from 'wowjs'
 export default {
-  name: "about",
-  mounted() {
+  name: 'about',
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
-  },
-};
+      mobile: true
+    }).init()
+  }
+}
 </script>

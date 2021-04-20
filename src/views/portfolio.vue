@@ -12,10 +12,10 @@
   </div>
 </template>
 <script>
-import works from "@/components/works.vue";
+import works from '@/components/works.vue'
 export default {
   components: {
-    works,
-  },
-};
+    works
+  }
+}
 </script>

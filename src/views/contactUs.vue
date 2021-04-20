@@ -50,27 +50,27 @@
 </template>
 
 <script>
-import "@/assets/js/contactUs.js";
-import "@/assets/js/owl.js";
-import Socials from "@/components/socials.vue";
-import WOW from "wowjs";
-import GoogleMap from "@/components/TravelMap.vue";
+import '@/assets/js/contactUs.js'
+import '@/assets/js/owl.js'
+import Socials from '@/components/socials.vue'
+import WOW from 'wowjs'
+import GoogleMap from '@/components/TravelMap.vue'
 export default {
-  name: "contact",
+  name: 'contact',
   components: {
     Socials,
-    GoogleMap,
+    GoogleMap
   },
 
-  mounted() {
+  mounted () {
     new WOW.WOW({
       live: true,
-      boxClass: "wow",
-      animateClass: "animate__animated",
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
 
       offset: 30,
-      mobile: true,
-    }).init();
-  },
-};
+      mobile: true
+    }).init()
+  }
+}
 </script>
