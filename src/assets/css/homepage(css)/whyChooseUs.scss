@@ -1,0 +1,140 @@
+.whyChooseUs {
+    .text {
+        .title {
+            font-size: 30px;
+
+            color: $blc;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "";
+                height: 21px;
+                width: 67px;
+                background-color: $grn;
+                position: absolute;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-family: "OpenSans";
+            color: rgb(96, 96, 110);
+            line-height: 1.75;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .link {
+        display: flex;
+        justify-content: space-between;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+
+            .blocks {
+                width: 300px;
+
+                .title {
+                    font-size: 18px;
+                    font-family: "Montserrat";
+                    color: rgb(96, 96, 110);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 2.667;
+                    text-align: left;
+                }
+                .icon {
+                    display: inline-block;
+                    text-align: left;
+                    .ionicon {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .links {
+                    .link a {
+                        font-size: 14px;
+                        font-family: "OpenSans";
+                        color: rgb(153, 153, 153);
+                        text-transform: uppercase;
+                        line-height: 2.143;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        flex: 0 0 auto;
+        background-image: url(../homepage/whyChooseUs.jpg);
+        width: 475px;
+        height: 505px;
+        background-size: cover;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .whyChooseUs {
+        .link {
+            .content {
+                .blocks {
+                    width: 250px;
+                }
+            }
+        }
+        .image {
+            width: 392px;
+            height: 417px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .whyChooseUs {
+        .link {
+            flex-direction: column;
+            align-items: center;
+            .content {
+                flex-direction: column;
+                .blocks {
+                    width: 400px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    .title {
+                        text-align: center;
+                    }
+                    .icon {
+                        text-align: center;
+                    }
+                    .links {
+                        .link a {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .image {
+            width: 720px;
+            height: 726px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .whyChooseUs {
+        .image {
+            width: 90vw;
+            height: 90vw;
+            flex: 1 1 auto;
+        }
+    }
+}

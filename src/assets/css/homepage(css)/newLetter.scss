@@ -1,0 +1,161 @@
+.newsletter {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: $grn;
+
+    .text {
+        width: 500px;
+        height: 230px;
+
+        .title {
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .getIt {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: $grn;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            width: 165px;
+            height: 49px;
+            background-color: #fff;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+        margin-right: 20px;
+    }
+
+    .form {
+        background-color: #fff;
+        padding: 20px;
+        width: 570px;
+        .title {
+            font-size: 24px;
+            font-family: "Montserrat";
+            color: rgb(96, 96, 110);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .sutitle {
+            font-size: 16px;
+            font-family: "OpenSans";
+            color: rgb(153, 153, 153);
+            line-height: 1.5;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+.send {
+    width: 135px;
+    height: 50px;
+    background-color: $grn;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 3.429;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    }
+}
+.input-email {
+    position: relative;
+    width: 100%;
+    border: #e5e5e5 solid 1px;
+    height: 50px;
+    .email {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: 50px;
+
+        font-family: "Montserrat";
+        color: rgb(205, 205, 205);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 4;
+        text-align: left;
+        left: 20px;
+        z-index: 2;
+        background-color: transparent;
+    }
+    .email-text {
+        position: absolute;
+        font-size: 12px;
+        font-family: "Montserrat";
+        color: rgb(205, 205, 205);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 4;
+        text-align: left;
+        left: 20px;
+        z-index: 1;
+        transition: 0.3s ease;
+    }
+    .active {
+        color: $grn;
+        font-size: 10px;
+        background-color: #fff;
+        line-height: 1;
+        top: -7px;
+        left: 5px;
+        padding: 5px;
+        transition: 0.3s ease;
+    }
+    margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .newsletter {
+        .form {
+            width: 470px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+        .text {
+            width: 720px;
+
+            margin: 0;
+        }
+
+        .form {
+            width: 720px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .newsletter {
+        .text {
+            height: 300px;
+            width: 100%;
+        }
+
+        .form {
+            width: 100%;
+        }
+    }
+}

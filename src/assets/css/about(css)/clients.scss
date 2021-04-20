@@ -1,0 +1,99 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .testimonials {
+        width: 50%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .persons {
+            width: 100%;
+            height: 100%;
+            margin-top: 100px;
+            .person {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .photo {
+                    width: 85px;
+                    height: 85px;
+                    border-radius: 50%;
+                    background-color: $blc;
+                    margin-bottom: 25px;
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .content {
+                    font-size: 14px;
+
+                    color: #999999;
+                    line-height: 2.143;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                .name {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 2;
+                    text-align: center;
+                    background-color: $grn;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .owl-dots {
+            .owl-dot span {
+                width: 15px;
+                height: 5px;
+                background-color: $blc;
+                border-radius: 0;
+                margin: 0 2px;
+            }
+            .owl-dot.active span {
+                background-color: $grn;
+                width: 30px;
+            }
+        }
+    }
+
+    .clients {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .client {
+            cursor: pointer;
+            margin: 15px;
+            border: 1px solid #d9d9d9;
+            width: 165px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+        .clients {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}

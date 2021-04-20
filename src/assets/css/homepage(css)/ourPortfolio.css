@@ -1,0 +1,270 @@
+input[type="radio"] {
+  display: none;
+}
+
+.ourPortfolio {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ourPortfolio .text {
+  margin-bottom: 100px;
+}
+
+.ourPortfolio .text .title {
+  font-size: 30px;
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.ourPortfolio .text .title::before {
+  content: "";
+  height: 21px;
+  width: 67px;
+  background-color: #7beec7;
+  position: absolute;
+  bottom: 5px;
+  z-index: -1;
+}
+
+.ourPortfolio .text .subtitle {
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: #60606e;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ourPortfolio .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ourPortfolio .content .categories {
+  width: 285px;
+}
+
+.ourPortfolio .content .categories .title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.ourPortfolio .content .categories .links label {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+  padding: 0 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.ourPortfolio .content .categories .links input[type="radio"]:checked + label {
+  -webkit-transform: translate(-15px, 0);
+          transform: translate(-15px, 0);
+  background-color: #7beec7;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ourPortfolio .content .blocks {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+}
+
+.ourPortfolio .content .blocks .block1,
+.ourPortfolio .content .blocks .block2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 25px 25px 0;
+  position: relative;
+}
+
+.ourPortfolio .content .blocks .block1 .title,
+.ourPortfolio .content .blocks .block2 .title {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  left: -100%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ourPortfolio .content .blocks .block1 .category,
+.ourPortfolio .content .blocks .block2 .category {
+  cursor: pointer;
+  position: absolute;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0;
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  padding: 0 10px;
+  margin: 10px 0;
+  background-color: #7beec7;
+  color: #fff;
+  opacity: 0;
+  top: 60%;
+  left: -100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ourPortfolio .content .blocks .block1 img,
+.ourPortfolio .content .blocks .block2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ourPortfolio .content .blocks .block1:hover .title,
+.ourPortfolio .content .blocks .block2:hover .title {
+  top: 40%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  opacity: 1;
+}
+
+.ourPortfolio .content .blocks .block1:hover .category,
+.ourPortfolio .content .blocks .block2:hover .category {
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.ourPortfolio .content .blocks .block1:hover img,
+.ourPortfolio .content .blocks .block2:hover img {
+  opacity: 0.5;
+}
+
+.ourPortfolio .content .blocks .block2 {
+  grid-row: span 2;
+}
+
+@media (max-width: 1200px) {
+  .ourPortfolio .content {
+    max-width: 970px;
+  }
+  .ourPortfolio .content .categories {
+    width: 235px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ourPortfolio .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourPortfolio .content .categories {
+    width: 100%;
+  }
+  .ourPortfolio .content .categories .title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: #60606e;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .ourPortfolio .content .categories .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourPortfolio .content .categories .links label {
+    text-align: center;
+  }
+  .ourPortfolio .content .categories .links input[type="radio"]:checked + label {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .ourPortfolio .content .blocks {
+    -ms-grid-rows: (150px)[9];
+        grid-template-rows: repeat(9, 150px);
+    -ms-grid-columns: (90%)[1];
+        grid-template-columns: repeat(1, 90%);
+  }
+}
+/*# sourceMappingURL=ourPortfolio.css.map */

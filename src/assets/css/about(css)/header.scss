@@ -1,0 +1,29 @@
+.site-header {
+    background-image: url(../about/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .site-hero {
+        height: 500px;
+        max-width: 1300px;
+        padding-top: 200px;
+        margin: 0 auto;
+        .title {
+            font-size: 36px;
+            font-family: "Montserrat";
+            color: rgb(96, 96, 110);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.333;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(96, 96, 110);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 3.429;
+            text-align: center;
+        }
+    }
+}

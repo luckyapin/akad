@@ -1,0 +1,33 @@
+.site-header {
+  background-image: url(../about/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site-header .site-hero {
+  height: 500px;
+  max-width: 1300px;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+
+.site-header .site-hero .title {
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+}
+
+.site-header .site-hero .subtitle {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 3.429;
+  text-align: center;
+}
+/*# sourceMappingURL=header.css.map */

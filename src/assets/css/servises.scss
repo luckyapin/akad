@@ -1,0 +1,303 @@
+$blc: #60606e;
+$grn: #7beec7;
+
+.services {
+    .container {
+        width: 1170px;
+        .text {
+            margin-top: 100px;
+            .title {
+                font-size: 30px;
+
+                color: $blc;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.6;
+                text-align: center;
+                margin-bottom: 10px;
+                position: relative;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    height: 21px;
+                    width: 67px;
+                    background-color: $grn;
+                    position: absolute;
+                    bottom: 5px;
+                    z-index: -1;
+                }
+            }
+
+            .subtitle {
+                margin: 0 auto;
+                font-size: 16px;
+
+                color: rgb(135, 135, 135);
+                line-height: 1.75;
+                text-align: center;
+                margin-bottom: 50px;
+                width: 600px;
+            }
+        }
+        .what-we-do {
+            .content {
+                display: flex;
+                justify-content: space-between;
+                height: 400px;
+                margin-bottom: 150px;
+                .left {
+                    width: 50%;
+                    padding: 15px;
+                    p {
+                        font-size: 16px;
+
+                        color: rgb(135, 135, 135);
+                        line-height: 1.5;
+                        text-align: left;
+                        margin-bottom: 50px;
+                    }
+                    .lists {
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            li {
+                                width: 40%;
+                                margin-top: 20px;
+                                position: relative;
+                                padding-left: 20px;
+                                &::before {
+                                    font-family: "Ionicons";
+                                    content: "✓";
+                                    font-size: 10px;
+                                    position: absolute;
+                                    left: 0;
+                                    top: calc(50% - 5px);
+                                    color: #fff;
+                                    background-color: $grn;
+                                    width: 10px;
+                                    height: 10px;
+                                    line-height: 10px;
+                                    text-align: center;
+                                }
+                                color: #60606e;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 50%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .advantages {
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                li {
+                    width: 290px;
+                    padding: 20px;
+                    .icon {
+                        margin: 0 auto;
+                        width: 50px;
+                        height: 50px;
+                        font-size: 50px;
+                        margin-bottom: 25px;
+
+                        ion-icon {
+                            color: #60606e;
+                            position: relative;
+                            z-index: 1;
+
+                            &::before {
+                                content: "";
+                                height: 20px;
+                                width: 40px;
+                                background-color: $grn;
+                                position: absolute;
+                                bottom: 5px;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                    .title {
+                        font-size: 20px;
+
+                        color: $blc;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 1.5;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .subtitle {
+                        font-size: 14px;
+
+                        color: rgb(135, 135, 135);
+                        line-height: 1.75;
+                        text-align: center;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        .plans {
+            margin-bottom: 50px;
+            .plan {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .block {
+                    border-top: $grn 5px solid;
+                    position: relative;
+                    transition: 0.3s ease;
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 0 0 40px rgba($color: #000000, $alpha: 0.3);
+                    }
+                    &::after {
+                        content: "";
+
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+
+                        border-left: 10px transparent solid;
+
+                        border-top: 10px $grn solid;
+                    }
+
+                    padding: 25px;
+                    .title {
+                        font-size: 30px;
+                        font-family: "Montserrat";
+                        color: rgb(96, 96, 110);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 1.6;
+                        text-align: left;
+                    }
+                    .price {
+                        padding: 0 10px;
+                        display: inline-block;
+                        font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 2.1;
+                        text-align: center;
+                        background-color: $grn;
+                    }
+                    ul {
+                        margin: 50px 0;
+                        li {
+                            margin-top: 10px;
+                            position: relative;
+                            padding-left: 20px;
+                            &::before {
+                                font-family: "Ionicons";
+                                content: "✓";
+                                font-size: 10px;
+                                position: absolute;
+                                left: 0;
+                                top: calc(50% - 5px);
+                                color: #fff;
+                                background-color: $grn;
+                                width: 10px;
+                                height: 10px;
+                                line-height: 10px;
+                                text-align: center;
+                            }
+                            color: #60606e;
+                        }
+                    }
+                    input {
+                        width: 165px;
+                        height: 50px;
+                        background-color: $grn;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 3.429;
+                        text-align: center;
+                        transition: 0.3s ease;
+                        &:hover {
+                            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .services {
+        .container {
+            max-width: 970px;
+            .advantages {
+                ul {
+                    li {
+                        width: 375px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .services {
+        .container {
+            max-width: 750px;
+            .what-we-do {
+                .content {
+                    height: fit-content;
+                    flex-direction: column;
+                    .right {
+                        width: 100%;
+                    }
+                    .left {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .services {
+        .container {
+            max-width: 100%;
+            .what-we-do {
+                .content {
+                    height: fit-content;
+                    flex-direction: column;
+                    .right {
+                        width: 100%;
+                    }
+                    .left {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

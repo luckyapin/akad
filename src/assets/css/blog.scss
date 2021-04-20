@@ -1,0 +1,127 @@
+$blc: #60606e;
+$grn: #7beec7;
+.blog {
+    .container {
+        .content {
+            ul {
+                height: 100%;
+                li {
+                    img {
+                        width: 100%;
+                    }
+                    margin: 50px 0;
+                    float: left;
+                    &::before {
+                        content: none;
+                    }
+                    .date {
+                        margin-top: 20px;
+                        float: left;
+                    }
+                    .comments,
+                    .likes {
+                        cursor: pointer;
+                        float: left;
+                        margin-top: 20px;
+                        height: 21px;
+                        font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(204, 204, 204);
+                        text-transform: uppercase;
+                        line-height: 21px;
+                        text-align: left;
+                        display: flex;
+                        ion-icon {
+                            margin: 0 10px;
+                            height: 100%;
+                        }
+                        span {
+                            display: inline-block;
+                            height: 100%;
+                        }
+                    }
+                    .likes {
+                    }
+                    p {
+                        float: right;
+
+                        font-size: 14px;
+
+                        color: rgb(153, 153, 153);
+                        line-height: 1.714;
+                        text-align: left;
+                    }
+                    .continue {
+                        a {
+                            font-size: 14px;
+                            font-family: "Montserrat";
+                            color: rgb(96, 96, 110);
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            line-height: 1.714;
+                            text-align: left;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 0;
+                                height: 1px;
+                                background-color: $grn;
+                                bottom: -5px;
+                                left: 0;
+                                z-index: -1;
+                                transition: 0.3s ease;
+                                opacity: 0;
+                            }
+                            &:hover:before {
+                                display: block;
+                                width: 50%;
+                                opacity: 1;
+                            }
+                        }
+                        float: left;
+                    }
+                }
+            }
+            .navigation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+
+                color: rgb(153, 153, 153);
+                line-height: 21px;
+                text-align: left;
+                height: 21px;
+                cursor: pointer;
+                .previous {
+                    &:hover {
+                        ion-icon {
+                            color: #7beec7;
+                            transform: translate(100%, 0);
+                        }
+                    }
+                }
+                .next {
+                    &:hover {
+                        ion-icon {
+                            color: #7beec7;
+                            transform: translate(-100%, 0);
+                        }
+                    }
+                }
+                ion-icon {
+                    margin: 0 10px;
+                    height: 100%;
+                    transition: 0.3s ease;
+                }
+                span {
+                    display: inline-block;
+                    transform: translate(0, -25%);
+                    height: 100%;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

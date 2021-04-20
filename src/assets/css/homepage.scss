@@ -1,0 +1,38 @@
+@import "homepage(css)/nullstyle.scss";
+$blc: #60606e;
+$grn: #7beec7;
+@import "homepage(css)/nav.scss";
+@import "homepage(css)/hero.scss";
+@import "homepage(css)/history.scss";
+@import "homepage(css)/whyChooseUs.scss";
+@import "homepage(css)/ourPortfolio.scss";
+@import "homepage(css)/newLetter.scss";
+@import "homepage(css)/footer.scss";
+
+body {
+    font-family: Montserrat;
+}
+
+.site__header {
+    background-image: url(../homepage/hero-bg-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .site-hero {
+        height: 770px;
+        max-width: 1300px;
+        padding-top: 145px;
+        margin: 0 auto;
+    }
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 800px) {
+}

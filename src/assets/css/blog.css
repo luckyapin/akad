@@ -1,0 +1,139 @@
+.blog .container .content ul {
+  height: 100%;
+}
+
+.blog .container .content ul li {
+  margin: 50px 0;
+  float: left;
+}
+
+.blog .container .content ul li img {
+  width: 100%;
+}
+
+.blog .container .content ul li::before {
+  content: none;
+}
+
+.blog .container .content ul li .date {
+  margin-top: 20px;
+  float: left;
+}
+
+.blog .container .content ul li .comments,
+.blog .container .content ul li .likes {
+  cursor: pointer;
+  float: left;
+  margin-top: 20px;
+  height: 21px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 21px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog .container .content ul li .comments ion-icon,
+.blog .container .content ul li .likes ion-icon {
+  margin: 0 10px;
+  height: 100%;
+}
+
+.blog .container .content ul li .comments span,
+.blog .container .content ul li .likes span {
+  display: inline-block;
+  height: 100%;
+}
+
+.blog .container .content ul li p {
+  float: right;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.714;
+  text-align: left;
+}
+
+.blog .container .content ul li .continue {
+  float: left;
+}
+
+.blog .container .content ul li .continue a {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #60606e;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: relative;
+}
+
+.blog .container .content ul li .continue a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #7beec7;
+  bottom: -5px;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.blog .container .content ul li .continue a:hover:before {
+  display: block;
+  width: 50%;
+  opacity: 1;
+}
+
+.blog .container .content .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #999999;
+  line-height: 21px;
+  text-align: left;
+  height: 21px;
+  cursor: pointer;
+}
+
+.blog .container .content .navigation .previous:hover ion-icon {
+  color: #7beec7;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+.blog .container .content .navigation .next:hover ion-icon {
+  color: #7beec7;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.blog .container .content .navigation ion-icon {
+  margin: 0 10px;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.blog .container .content .navigation span {
+  display: inline-block;
+  -webkit-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  height: 100%;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=blog.css.map */

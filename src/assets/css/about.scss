@@ -1,0 +1,18 @@
+$blc: #60606e;
+$grn: #7beec7;
+@import "about(css)/header.scss";
+@import "about(css)/info.scss";
+@import "about(css)/someBenefits.scss";
+@import "about(css)/dreamteam.scss";
+@import "about(css)/information.scss";
+@import "about(css)/clients.scss";
+.about {
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 800px) {
+}

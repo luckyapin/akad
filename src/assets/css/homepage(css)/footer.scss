@@ -1,0 +1,116 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    .links {
+        display: flex;
+        margin: 25px 0;
+
+        .link {
+            position: relative;
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: rgb(154, 154, 154);
+            text-transform: uppercase;
+            line-height: 3.429;
+            text-align: left;
+            margin: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 1px;
+                background-color: $grn;
+                bottom: -5px;
+                left: -50%;
+                z-index: -1;
+                transition: 0.3s ease;
+                opacity: 0;
+            }
+            &:hover:before {
+                display: block;
+                left: 0;
+                opacity: 1;
+            }
+        }
+    }
+
+    .createBy {
+        margin: 25px 0;
+        .title {
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: rgb(154, 154, 154);
+            text-transform: uppercase;
+            line-height: 3.429;
+            text-align: right;
+        }
+    }
+}
+.social {
+    float: right;
+    li {
+        float: left;
+        margin: 0 10px;
+        a {
+            color: #999999;
+            font-size: 18px;
+            transition: 0.3s ease;
+            &:hover {
+                color: $grn;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .links {
+            display: flex;
+            margin: 25px 0;
+            align-items: center;
+            flex-direction: column;
+            .link {
+                font-size: 14px;
+                font-family: "OpenSans";
+                color: rgb(154, 154, 154);
+                text-transform: uppercase;
+                line-height: 3.429;
+                text-align: left;
+                margin: 20px;
+            }
+        }
+
+        .createBy {
+            margin: 25px 0;
+            .title {
+                font-size: 14px;
+                font-family: "OpenSans";
+                color: rgb(154, 154, 154);
+                text-transform: uppercase;
+                line-height: 3.429;
+                text-align: center;
+            }
+        }
+    }
+}
+.social {
+    float: none;
+
+    display: flex;
+    justify-content: center;
+    li {
+        float: none;
+
+        margin: 0 10px;
+        a {
+            color: #999999;
+            font-size: 18px;
+            transition: 0.3s ease;
+            &:hover {
+                color: $grn;
+            }
+        }
+    }
+}
