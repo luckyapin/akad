@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="what-we-do">
+      <div class="what-we-do wow animate__fadeInUpSmall">
         <div class="text">
           <div class="title">WHAT WE DO</div>
           <div class="subtitle">
@@ -15,8 +15,8 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>
-        <div class="content">
-          <div class="left">
+        <div class="content ">
+          <div class="left wow animate__fadeInUpSmall">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -41,12 +41,12 @@
               </ul>
             </div>
           </div>
-          <div class="right">
+          <div class="right wow animate__fadeInUpSmall">
             <img src="https://picsum.photos/800/500?random=" alt="" />
           </div>
         </div>
       </div>
-      <div class="advantages">
+      <div class="advantages wow animate__fadeInUpSmall">
         <ul>
           <li>
             <div class="icon"><ion-icon name="pulse-outline"></ion-icon></div>
@@ -84,7 +84,7 @@
           </li>
         </ul>
       </div>
-      <div class="plans">
+      <div class="plans wow animate__fadeInUpSmall">
         <div class="text">
           <div class="title">PRICING PLANS</div>
           <div class="subtitle">
@@ -139,5 +139,17 @@
 </template>
 
 <script>
-export default {};
+import WOW from 'wowjs'
+export default {
+  mounted () {
+    new WOW.WOW({
+      live: true,
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
+
+      offset: 30,
+      mobile: true
+    }).init()
+  }
+}
 </script>

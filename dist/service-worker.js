@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/akad/precache-manifest.5c3b60cf1305b64802b4f857b19c06b1.js"
+  "/akad/precache-manifest.6d9abd42cf668b6de74a5c1823efef2a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "akadwithvue"});

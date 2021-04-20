@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eea2a511fc7f66c44120",
+    "revision": "204ba50c6c8f0936a16b",
     "url": "/akad/css/app.5b2e0058.css"
   },
   {
@@ -84,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/akad/img/whyChooseUs.1c75af15.jpg"
   },
   {
-    "revision": "dd2370a19c7881252c8730fe9ac7b8d7",
+    "revision": "152dc732ffa63ea42151f4c4aeb03798",
     "url": "/akad/index.html"
   },
   {
-    "revision": "eea2a511fc7f66c44120",
-    "url": "/akad/js/app.271bf69d.js"
+    "revision": "204ba50c6c8f0936a16b",
+    "url": "/akad/js/app.57674107.js"
   },
   {
     "revision": "d9be04dd243cdedfdc76",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/akad/js/chunk-18ca7248.1dfbff3d.js"
   },
   {
-    "revision": "39241ce91f8856d743c6",
-    "url": "/akad/js/chunk-2d0abf5f.ed6b1dc8.js"
+    "revision": "f8076e9014349884d5df",
+    "url": "/akad/js/chunk-2d0abf5f.573dd5b7.js"
   },
   {
     "revision": "f2796361f337cb71e68e",
